@@ -24,12 +24,7 @@ export const ProfileSettingHTML = (props: any) => {
                   alt="profile"
                   style={{ width: '320px', height: '320px' }}
                 />
-                <label
-                  htmlFor="profile"
-                  className="absolute top-20 right-2 flex h-8.5 w-8.5 cursor-pointer items-center justify-center rounded-full bg-primary text-white hover:bg-opacity-90 sm:top-20 sm:right-2"
-                >
-                  <CameraSVG />
-                </label>
+               
               </div>
               <SocialProfileSVG />
             </div>

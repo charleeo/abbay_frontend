@@ -1,12 +1,41 @@
 import {
   ArrowLeftOnRectangleIcon,
+  PlayCircleIcon,
+  UserCircleIcon,
 } from '@heroicons/react/24/solid';
 
 import {
+  IRoutes,
   IRoutesNested,
 } from './models/types/IRoutes';
 
+export const routes: IRoutes[] = [
 
+  {
+    path: "/register",
+    name: "register",
+    icon: UserCircleIcon,
+
+  },
+  {
+    path: "/login",
+    name: "login",
+    icon: UserCircleIcon,
+
+  },
+  {
+    path: "/dashboard",
+    name: "dashboard",
+    icon: UserCircleIcon,
+
+  },
+  {
+    path: "https://play.google.com/store/apps",
+    name: "download app",
+    icon: PlayCircleIcon,
+    target: "_blank",
+  },
+]
 
 export const routesNested: Partial<IRoutesNested> = {
 
@@ -22,17 +51,6 @@ export const routesNested: Partial<IRoutesNested> = {
 
   admin_protected: [
 
-    {
-      path: "/dashboard",
-      name: "dashboard",
-      // icon: UserIcon,
-    },
-    
-    
-    {
-      name: "Profile",
-      path: '/admin/profile'
-    }
 
   ],
 
@@ -59,7 +77,7 @@ export const routesNested: Partial<IRoutesNested> = {
     },   
   ],
   admin_protected_menu: [
-    
+   
   ],
 
   auth: [
@@ -78,10 +96,11 @@ export const routesNested: Partial<IRoutesNested> = {
   ],
 
   general: [
+    
   ],
 
 }
 
 
 
-
+export default routes;

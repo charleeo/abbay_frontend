@@ -45,10 +45,12 @@ export const Login: React.FC = () => {
     const resposne = await submit({
       data : { email: data.email, password: data.password, remember:checked},
       navigationPath: from,
-      endpoint:`auth/login`
+      endpoint:`auth/login`,
+      
     })
 
     if(resposne?.status){
+      console.log(resposne)
         auth.setJWT(resposne.data.token)
         setAuth(true)
     }

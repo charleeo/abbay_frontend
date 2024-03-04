@@ -17,6 +17,7 @@ function logout() {
     const date:Date = new Date();
     const now:number = date.getTime()
     const timeStamp:number=(Math.ceil(now/1000));
+    console.log(decodedToken)
     if (timeStamp > decodedToken.exp) return null;
     else {
       return decodedToken
@@ -28,21 +29,14 @@ function logout() {
  
  const setJWT= (token:string):void|null=>{
   localStorage.setItem(tokenKey,token);
-}
- 
- const setRefreshJWT= (token:string):void|null=>{
-  localStorage.setItem(refreshTokenKey,token);
+
  }
- 
 const getJWT =  ():string|null => {
   
    return localStorage.getItem(tokenKey)
  }
-const getRefreshJWT =  ():string|null => {
-  
-   return localStorage.getItem(refreshTokenKey)
- }
- export const auth = {getCurrentUser,logout,setJWT,getJWT,setRefreshJWT,getRefreshJWT}
+
+ export const auth = {getCurrentUser,logout,setJWT,getJWT}
 export default auth
 
 
