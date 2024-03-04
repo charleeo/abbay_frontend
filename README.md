@@ -8,6 +8,8 @@ To run the project locally on your machine, simply issue the following command :
 
 Visit the URL you see after the above command on your browser and will be able to naviage the site seamlessly.
 
+It will automatically connect with backend when you have setup the backend. The Backend port is setup dynamicaly
+
 
 I could not create Test cases as there was time limit on my side.
 
