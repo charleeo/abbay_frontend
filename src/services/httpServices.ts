@@ -24,11 +24,11 @@ function setJwtHeaders():object {
     };
 }
 export function setURL():string{
-  return 'http://127.0.0.1:3500/api/v1/'
+  return 'http://127.0.0.1:3000/api/v1/'
 }
 
 export function setFileURL():string{
-  return 'http://127.0.0.1:3500/'
+  return 'http://127.0.0.1:3000/'
 }
 
 
